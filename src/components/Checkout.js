@@ -90,13 +90,13 @@ const ColorlibConnector = withStyles({
   active: {
     "& $line": {
       backgroundImage:
-        "linear-gradient( 95deg,rgb(80, 161, 90) 0%,rgb(34, 123, 60) 50%,rgb(21, 84, 41) 100%)"
+        "linear-gradient( 95deg,rgb(255, 235, 133) 0%,rgb(248, 214, 45) 50%,rgb(204, 160, 0) 100%)"
     }
   },
   completed: {
     "& $line": {
       backgroundImage:
-        "linear-gradient( 95deg,rgb(80, 161, 90) 0%,rgb(34, 123, 60) 50%,rgb(21, 84, 41) 100%)"
+        "linear-gradient( 95deg,rgb(255, 235, 133) 0%,rgb(248, 214, 45) 50%,rgb(204, 160, 0) 100%)"
     }
   },
   line: {
@@ -121,12 +121,12 @@ const useColorlibStepIconStyles = makeStyles({
   },
   active: {
     backgroundImage:
-      "linear-gradient( 136deg, rgb(80, 161, 90) 0%,rgb(34, 123, 60) 50%,rgb(21, 84, 41) 100%)",
+      "linear-gradient( 136deg, rgb(21, 84, 41) 0%,rgb(34, 123, 60) 50%,rgb(80, 161, 90) 100%)",
     boxShadow: "0 4px 10px 0 rgba(0,0,0,.25)"
   },
   completed: {
     backgroundImage:
-      "linear-gradient( 136deg,rgb(80, 161, 90) 0%,rgb(34, 123, 60) 50%,rgb(21, 84, 41) 100%)"
+      "linear-gradient( 136deg,rgb(255, 235, 133) 0%,rgb(248, 214, 45) 50%,rgb(204, 160, 0) 100%)"
   }
 });
 

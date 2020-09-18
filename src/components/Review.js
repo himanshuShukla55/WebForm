@@ -11,21 +11,21 @@ const Review = ({data}) => {
 
   const image = data.image? data.image : {empty : true};
 
-  let e = email[0] ? email[0] : 'anonymous';
-  let text = description[0];
+  let e = email? email : 'anonymous';
+  let text = description;
   
   
   let {coordinates} = plek.geometrie;
   const address = plek.address;
 
-
+  console.log()
   useEffect(()=>{
     axios.post(`http://ec2-52-200-189-81.compute-1.amazonaws.com:8001/private/signals/
     `,{
-      "text": JSON.stringify(text),
+      "text": text,
       "address": JSON.stringify(address),
       "coordinates": JSON.stringify(coordinates),
-      "email": JSON.stringify(e),
+      "email": e,
       "phone": 'not provided'
     }).then(res => {
       console.log(data);
